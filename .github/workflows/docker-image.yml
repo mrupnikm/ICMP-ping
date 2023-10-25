@@ -15,6 +15,6 @@ jobs:
     steps:
     - uses: actions/checkout@v3
     - name: Build the Docker image
-      run: docker build . --file dokerfile --tag mrupnikm/icmpping:$(date +%s)
+      run: docker build . --file dokerfile --tag mrupnikm/icmpping:latest
     - name: Publish to DockerHub
       run: docker push mrupnikm/icmpping:latest
