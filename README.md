@@ -7,20 +7,19 @@ This project is a simple web application with Python Flask that provides endpoin
 The project contains three main routes:
 
 1. Health Check
-Route: /health
-Method: GET
+- **Route**: /health
+- **Method**: GET
 
 2. API Ping
-Route: /api/ping
-Method: GET
-Description: This route allows you to send ICMP ping requests to a specified IP address. It accepts the following query parameters:
-IP (required): The IP address to ping.
-count (optional, default: 1): The number of ping requests to send.
-timeout (optional, default: 1): The timeout for each ping request.
-data (optional, default: 56): The size of the data payload in each ping request.
-The route logs the parameters and sends the specified number of ping requests to the provided IP address. It then returns a JSON response with the number of sent and received pings.
+- **Route**: /api/ping
+- **Method**: GET
+- **Description**: This route allows you to send ICMP ping requests to a specified IP address. It accepts the following query parameters:
+  - IP (required): The IP address to ping.
+  - count (optional, default: 1): The number of ping requests to send.
+  - timeout (optional, default: 1): The timeout for each ping request.
+  - data (optional, default: 56): The size of the data payload in each ping request.
 
 3. Ping
-Route: /ping
-Method: GET
-Description: A simple route that responds with "Pong" when accessed.
+- **Route**: /ping
+- **Method**: GET
+- **Description**: A simple route that responds with "Pong" when accessed.
