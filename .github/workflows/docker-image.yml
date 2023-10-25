@@ -17,4 +17,6 @@ jobs:
     - name: Build the Docker image
       run: docker build . --file dokerfile --tag mrupnikm/icmpping:latest
     - name: Publish to DockerHub
-      run: docker push mrupnikm/icmpping:latest
+      run: |
+        docker login -u mrupnikm -p ${{ secrets.DOCKER_HUB_TOKEN }}
+        docker push mrupnikm/icmpping:latest
